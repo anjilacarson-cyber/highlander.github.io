@@ -80,30 +80,6 @@
     vertical-align: middle;
     margin-right: 8px;
   }
-  form {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    border-top: 6px solid #2e7d32;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #b0bec5;
-    font-size: 14px;
-  }
-  button {
-    background: #1565c0;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
-  }
 </style>
 </head>
 <body>
@@ -181,23 +157,16 @@
 </section>
 
 <section>
+  <h2>Send Us a Message</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYOUR_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
+<section>
   <h2>Our Poster</h2>
   <div style="position: relative; display: inline-block; max-width: 100%;">
     <img src="poster.png" alt="RHighlander Tech Poster" style="width:100%; border-radius:12px;">
     <img src="logo.png" alt="Regional Highlander Logo" style="position: absolute; top: 20px; left: 20px; width: 120px;">
   </div>
-</section>
-
-<section>
-  <h2>Send Us a Message</h2>
-  <form action="https://formsubmit.co/your-email@example.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="phone" placeholder="Phone Number">
-    <textarea name="message" rows="5" placeholder="What service do you need?" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>Form messages will be sent to your email.</p>
 </section>
 
 <footer>
