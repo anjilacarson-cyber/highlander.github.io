@@ -8,14 +8,18 @@
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5efe6;
-    color: #2b1d14;
+    background: #f3f5f7;
+    color: #2f3e46;
   }
   header {
-    background: linear-gradient(135deg, #5a3825, #8b5e3c);
+    background: linear-gradient(135deg, #2e7d32, #1565c0, #6d4c41);
     color: white;
     padding: 40px 20px;
     text-align: center;
+  }
+  header img {
+    max-width: 120px;
+    margin-bottom: 15px;
   }
   header h1 {
     margin: 0;
@@ -29,20 +33,20 @@
     display: inline-block;
     margin-top: 20px;
     padding: 12px 20px;
-    background: #d2a679;
-    color: #2b1d14;
+    background: #43a047;
+    color: white;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
   }
   section {
     padding: 40px 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
   }
   .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
   }
   .card {
@@ -50,13 +54,14 @@
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-top: 6px solid #90a4ae;
   }
   .card h3 {
     margin-top: 0;
-    color: #5a3825;
+    color: #1565c0;
   }
   footer {
-    background: #5a3825;
+    background: #455a64;
     color: white;
     text-align: center;
     padding: 20px;
@@ -64,7 +69,7 @@
   .social-links a {
     display: inline-block;
     margin: 0 10px;
-    color: #d2a679;
+    color: #2e7d32;
     text-decoration: none;
     font-weight: bold;
     vertical-align: middle;
@@ -75,45 +80,94 @@
     vertical-align: middle;
     margin-right: 8px;
   }
+  form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-top: 6px solid #2e7d32;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #b0bec5;
+    font-size: 14px;
+  }
+  button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
 
 <header>
+  <img src="logo.png" alt="Regional Highlander Logo">
   <h1>RHighlander Tech</h1>
-  <p>Fast & Reliable Online Registration Services</p>
+  <p>Online Registration & Digital Support Services</p>
   <a class="btn" href="https://wa.me/254112916946">Chat on WhatsApp</a>
 </header>
 
 <section>
-  <h2>Our Services</h2>
+  <h2>Our Main Services</h2>
   <div class="services">
     <div class="card">
-      <h3>KRA PIN Registration</h3>
-      <p>Quick assistance with new KRA PIN registration and recovery.</p>
+      <h3>KRA Services</h3>
+      <p>• New KRA PIN Registration<br>
+         • KRA PIN Update<br>
+         • Password Reset<br>
+         • KRA Returns Filing</p>
     </div>
+
     <div class="card">
-      <h3>SHA Registration</h3>
-      <p>Get help registering and updating SHA details easily.</p>
+      <h3>SHA / NHIF Services</h3>
+      <p>• SHA Registration<br>
+         • NHIF / SHA Profile Update</p>
     </div>
+
     <div class="card">
-      <h3>HEF (HELB) Registration</h3>
-      <p>Support with HEF / HELB account setup and application steps.</p>
+      <h3>HEF / HELB</h3>
+      <p>• HEF (HELB) Registration<br>
+         • HELB Application Follow-up</p>
     </div>
+
     <div class="card">
-      <h3>Account Setup Help</h3>
-      <p>Assistance creating required online service accounts.</p>
+      <h3>eCitizen Services</h3>
+      <p>• eCitizen Account Help<br>
+         • Good Conduct Application</p>
+    </div>
+
+    <div class="card">
+      <h3>NSSF</h3>
+      <p>• NSSF Registration</p>
+    </div>
+
+    <div class="card">
+      <h3>NTSA Services</h3>
+      <p>• Driving License Services<br>
+         • NTSA Portal Help</p>
+    </div>
+
+    <div class="card">
+      <h3>Document Services</h3>
+      <p>• Document Scanning & Upload<br>
+         • PDF Editing & Conversion<br>
+         • Online Form Filling</p>
+    </div>
+
+    <div class="card">
+      <h3>Design & Web</h3>
+      <p>• Simple Website Setup<br>
+         • Poster & Flyer Design</p>
     </div>
   </div>
-</section>
-
-<section>
-  <h2>Requirements</h2>
-  <ul>
-    <li>National ID or Passport</li>
-    <li>Active Phone Number</li>
-    <li>Email Address</li>
-  </ul>
 </section>
 
 <section>
@@ -124,7 +178,18 @@
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">@regional_highlander
     </a>
   </div>
-  <p>Available daily — fast response time.</p>
+</section>
+
+<section>
+  <h2>Send Us a Message</h2>
+  <form action="https://formsubmit.co/your-email@example.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number">
+    <textarea name="message" rows="5" placeholder="What service do you need?" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p>Form messages will be sent to your email.</p>
 </section>
 
 <section>
